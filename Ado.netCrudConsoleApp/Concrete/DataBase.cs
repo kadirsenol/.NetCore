@@ -22,8 +22,10 @@ namespace Ado.netWithInterface.Concrete
 
         public void ExecuteNonQuery(string sql)
         {
+            connection.Open();
             Command.CommandText = sql;
             Command.ExecuteNonQuery();
+            connection.Close();
         }
 
         public void ExecuteReader(string sql)
