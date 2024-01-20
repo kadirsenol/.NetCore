@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyKrediKarti", "MyKrediKart
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdamAsmaca", "AdamAsmaca\AdamAsmaca.csproj", "{40873215-54E4-4033-8F32-C3D6071847F6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ado.netCinemaTicketScreenPullingDataFromDB", "Ado.Net (Veri tabanından veri çekme)\Ado.netCinemaTicketScreenPullingDataFromDB.csproj", "{C7003442-062F-440C-BE8A-20A2930C7EB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ado.netCinemaTicketScreenPullingDataFromDb", "Ado.Net (Veri tabanından veri çekme)\Ado.netCinemaTicketScreenPullingDataFromDb.csproj", "{C7003442-062F-440C-BE8A-20A2930C7EB7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection_futboolerexample", "Reflection_futboolerexample\Reflection_futboolerexample.csproj", "{0A8D7FFD-F6C3-4FB5-981F-6AEDEC341BB9}"
 EndProject
