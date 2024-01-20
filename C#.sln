@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdamAsmaca", "AdamAsmaca\Ad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection_futboolerexample", "Reflection_futboolerexample\Reflection_futboolerexample.csproj", "{0A8D7FFD-F6C3-4FB5-981F-6AEDEC341BB9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ado.netWithInterfacePullingDataFromDb", "Ado.netWithInterface\Ado.netWithInterfacePullingDataFromDb.csproj", "{98355C9C-79DC-420D-9064-9D05E9BFE52F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ado.netCinemaTicketScreenPullingDataFromDb", "Ado.netCinemaTicketScreenPullingDataFromDb\Ado.netCinemaTicketScreenPullingDataFromDb.csproj", "{C1826BBF-6B75-4FB7-B0A3-BC2C65C96386}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ado.netCrudConsoleApp", "Ado.netWithInterfacePullingDataFromDb\Ado.netCrudConsoleApp.csproj", "{3CF55B2C-19F5-48A6-BFC7-F7313D8A0775}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ado.netCrudFormApp", "Ado.netCrudFormApp\Ado.netCrudFormApp.csproj", "{FA41E216-D210-4D6A-B9E2-B8E4A4C7905D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +33,18 @@ Global
 		{0A8D7FFD-F6C3-4FB5-981F-6AEDEC341BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A8D7FFD-F6C3-4FB5-981F-6AEDEC341BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A8D7FFD-F6C3-4FB5-981F-6AEDEC341BB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98355C9C-79DC-420D-9064-9D05E9BFE52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98355C9C-79DC-420D-9064-9D05E9BFE52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98355C9C-79DC-420D-9064-9D05E9BFE52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98355C9C-79DC-420D-9064-9D05E9BFE52F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1826BBF-6B75-4FB7-B0A3-BC2C65C96386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1826BBF-6B75-4FB7-B0A3-BC2C65C96386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1826BBF-6B75-4FB7-B0A3-BC2C65C96386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1826BBF-6B75-4FB7-B0A3-BC2C65C96386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF55B2C-19F5-48A6-BFC7-F7313D8A0775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF55B2C-19F5-48A6-BFC7-F7313D8A0775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF55B2C-19F5-48A6-BFC7-F7313D8A0775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF55B2C-19F5-48A6-BFC7-F7313D8A0775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA41E216-D210-4D6A-B9E2-B8E4A4C7905D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA41E216-D210-4D6A-B9E2-B8E4A4C7905D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA41E216-D210-4D6A-B9E2-B8E4A4C7905D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA41E216-D210-4D6A-B9E2-B8E4A4C7905D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
