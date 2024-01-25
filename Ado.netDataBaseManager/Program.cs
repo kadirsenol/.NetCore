@@ -33,7 +33,7 @@ namespace Ado.netDataBaseManager
                 shippers.shippers.Add(shipper);
             }
             
-            Console.WriteLine(shippers.shippers[1].Phone);
+            
         }
     }
 }
