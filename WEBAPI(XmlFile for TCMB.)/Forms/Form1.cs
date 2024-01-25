@@ -60,6 +60,7 @@ namespace WEBAPI_XmlFile_for_TCMB._
                                                 [ForexSelling][nvarchar](50) NULL
                                             ) ON [PRIMARY]
                                             ");
+                    MessageBox.Show(@$"Veritabaný ve tablo baþarýyla oluþturuldu!");
                 }
                 catch (Exception ex)
                 {
