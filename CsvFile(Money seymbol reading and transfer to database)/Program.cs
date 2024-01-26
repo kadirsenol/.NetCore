@@ -16,10 +16,9 @@ namespace CSV_file_reading_and_transfer_to_database_
             Console.WriteLine("Csv dosyasına uygun modele veriler aktarıldı");
             Database db = new Database();
             db.Createtable(connection);
-            Console.WriteLine("Csv dosyasına uygun tabla veritabanında oluşturuldu.");
+            Console.WriteLine("Csv dosyasına uygun tablo veritabanında oluşturuldu.");
             db.Insert(connection,csvfile.currencys);
             Console.WriteLine("Veriler veritabanına aktarıldı.");
-            Console.WriteLine("Hello, World!");
         }
     }
 }
