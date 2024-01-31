@@ -8,6 +8,6 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Abstract
 {
     public interface IItfaiye
     {
-        public void MudehaleEt(object yanan);
+        public void MudehaleEt(object yanan, EventArgs e);
     }
 }

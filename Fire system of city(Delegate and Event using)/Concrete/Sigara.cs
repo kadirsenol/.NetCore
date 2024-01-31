@@ -14,7 +14,8 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Concrete
 
         public void dumanCikar()
         {
-            Sigarayandi(this);
+            EventArgs eventArgs = new EventArgs();
+            Sigarayandi(this,eventArgs);
             
         }
 

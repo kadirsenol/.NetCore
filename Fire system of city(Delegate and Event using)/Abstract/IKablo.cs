@@ -10,6 +10,6 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Abstract
     {
         public void Fisetak();
         public void YuksekAkimgecir();
-        public void DumanCikar();
+        public void DumanCikar(EventArgs e);
     }
 }

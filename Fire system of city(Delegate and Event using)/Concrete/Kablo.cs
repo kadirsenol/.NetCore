@@ -18,10 +18,10 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Concrete
             MaxAkim = maxakim;   
         }
 
-        public void DumanCikar()
+        public void DumanCikar(EventArgs e)
         {
             Console.WriteLine("Kablo yanmaya basladi");
-            KabloYandi(this);
+            KabloYandi(this,e);
         }
 
         public void Fisetak()
@@ -69,7 +69,8 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Concrete
         public void YuksekAkimgecir()
         {
             Console.WriteLine("Kablodan yüksek akim geciyor");
-            DumanCikar();
+            KabloEventArgs kabloeventarg = new KabloEventArgs("Bekir");
+            DumanCikar(kabloeventarg);
         }
     }
 }

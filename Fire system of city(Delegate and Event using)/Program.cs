@@ -3,7 +3,8 @@ using System.Xml.Serialization;
 
 namespace Fire_system_of_city_Delegate_and_Event_using_
 {
-    public delegate void FireHandler(object nesne);
+    public delegate void FireHandler(object nesne, EventArgs e);
+    public delegate void SparkHandler(object nesne);
     public delegate void PoliceHandler();
     internal class Program
     {
@@ -21,12 +22,12 @@ namespace Fire_system_of_city_Delegate_and_Event_using_
             dumanDedektor.AlarmCaldi += Kadir.GerekeniYap;
             dumanDedektor.AlarmCaldi += Ali.Kac;
             dumanDedektor.AlarmCaldi += Ayse.RahatsizOl;
-            dumanDedektor.AlarmCaldi += itfaiye.MudehaleEt;
+            dumanDedektor.AlarmHaberGecti += itfaiye.MudehaleEt;
             itfaiye.MudehaleEtti += police.olayYeriIncele;
 
             do
             {
-                Console.WriteLine("Merhaba ben akıllı mağaza asistanı cedric, size nasıl yardımcı olabilirim ? \n1-)Sigara satin al\n2-)Kablo satin al");
+                Console.WriteLine("Merhaba ben akıllı olay asistanı Clican, size nasıl yardımcı olabilirim ? \n1-)Sigara satin al\n2-)Kablo satin al");
                 int secim = int.Parse(Console.ReadLine());
                 switch (secim)
                 {

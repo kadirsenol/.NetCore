@@ -9,20 +9,23 @@ namespace Fire_system_of_city_Delegate_and_Event_using_.Concrete
 {
     public class DumanDedektor : IDumanDedektor
     {
-        public event FireHandler AlarmCaldi;   
+        public event SparkHandler AlarmCaldi;
+        public event FireHandler AlarmHaberGecti;
         public string marka { get; set; }
 
-        public void DumanAlgila(object dumancikaran)
+        public void DumanAlgila(object dumancikaran, EventArgs e)
         {
             if (dumancikaran is Sigara)
             {
                 Console.WriteLine("Dedektör sigara alarmı devreye girdi.");
                 AlarmCaldi(dumancikaran);
+                AlarmHaberGecti(dumancikaran,e);
             }
             else if (dumancikaran is Kablo)
             {
                 Console.WriteLine("Dedektör yangın alarmı devreye girdi ve otomatik olarak itfaiyeye bildirim geçildi.");
                 AlarmCaldi(dumancikaran);
+                AlarmHaberGecti(dumancikaran ,e);
             }
         }
     }
