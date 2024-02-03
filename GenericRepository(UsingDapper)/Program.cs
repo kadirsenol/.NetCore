@@ -37,7 +37,7 @@ namespace GenericRepository_UsingDapper_
                 Phone = shipper.Phone
             };
             repofshipper.Delete(shipper1);
-            shippers.shippers = new List<Shipper>();
+            shippers.shippers.Clear();
             shippers.shippers.AddRange(repofshipper.GetAll());
             foreach (Shipper item in shippers.shippers)
             {
@@ -87,7 +87,7 @@ namespace GenericRepository_UsingDapper_
                 UnitsOnOrder = product.UnitsInStock
             };
             repofproduct.Delete(product1);
-            products.products = new List<Product>();//liste temizleme islemi yapildi.
+            products.products.Clear();
             products.products.AddRange(repofproduct.GetAll());
             foreach (Product item in products.products)
             {
