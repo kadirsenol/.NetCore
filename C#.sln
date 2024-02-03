@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsvFile(Money seymbol readi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFile(FindingCreditCardDetails)", "TextFile(FindingCreditCardDetails)\TextFile(FindingCreditCardDetails).csproj", "{F31A9D00-18CC-442C-96DD-8E57356EF6CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegate(Difference Between Invoke and DynamicInvoke)", "Delegate(Difference Between Invoke and DynamicInvoke)\Delegate(Difference Between Invoke and DynamicInvoke).csproj", "{DA0AAF48-EEE3-4374-8C3D-96CE2FB214B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate(Difference Between Invoke and DynamicInvoke)", "Delegate(Difference Between Invoke and DynamicInvoke)\Delegate(Difference Between Invoke and DynamicInvoke).csproj", "{DA0AAF48-EEE3-4374-8C3D-96CE2FB214B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fire system of city(Delegate and Event using)", "Fire system of city(Delegate and Event using)\Fire system of city(Delegate and Event using).csproj", "{D99E6DB5-5D09-4903-9C22-8631174E51A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fire system of city(Delegate and Event using)", "Fire system of city(Delegate and Event using)\Fire system of city(Delegate and Event using).csproj", "{D99E6DB5-5D09-4903-9C22-8631174E51A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository(UsingDapper)", "GenericRepository(UsingDapper)\GenericRepository(UsingDapper).csproj", "{10A1766A-D141-4266-BADD-40DE74B3B0F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{D99E6DB5-5D09-4903-9C22-8631174E51A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99E6DB5-5D09-4903-9C22-8631174E51A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D99E6DB5-5D09-4903-9C22-8631174E51A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
