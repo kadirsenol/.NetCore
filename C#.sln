@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate(Difference Between
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fire system of city(Delegate and Event using)", "Fire system of city(Delegate and Event using)\Fire system of city(Delegate and Event using).csproj", "{D99E6DB5-5D09-4903-9C22-8631174E51A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericRepository(UsingDapper)", "GenericRepository(UsingDapper)\GenericRepository(UsingDapper).csproj", "{10A1766A-D141-4266-BADD-40DE74B3B0F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository(UsingDapper)", "GenericRepository(UsingDapper)\GenericRepository(UsingDapper).csproj", "{10A1766A-D141-4266-BADD-40DE74B3B0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionFuncPredicateDelegate(UsingWhereForEachMethod)", "ActionFuncPredicateDelegate(UsingWhereForEachMethod)\ActionFuncPredicateDelegate(UsingWhereForEachMethod).csproj", "{10942295-AAA6-4F44-A322-2D5B224778EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10A1766A-D141-4266-BADD-40DE74B3B0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10942295-AAA6-4F44-A322-2D5B224778EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10942295-AAA6-4F44-A322-2D5B224778EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10942295-AAA6-4F44-A322-2D5B224778EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10942295-AAA6-4F44-A322-2D5B224778EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
