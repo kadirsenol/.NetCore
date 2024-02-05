@@ -80,7 +80,7 @@ namespace ActionFuncPredicateDelegate_UsingWhereForEachMethod_
             Console.WriteLine(pre9(ahmet));
             #endregion
 
-            #region Using Where Method
+            #region Using Where Method (With First and FirstOrDefault Methods)
 
             //İçerisine bool geri dönüş sağlayan func delegate parametresi geçilen metottur
 
@@ -89,7 +89,7 @@ namespace ActionFuncPredicateDelegate_UsingWhereForEachMethod_
             kisi.Where(p => p.Id == 3);
             kisi.Where(BoolReturnYesParameters);
 
-            //Dönüşün bastırılması
+            //Sonucun bastırılması
             IEnumerable<Kisi> aliler = new List<Kisi>();
             aliler = kisi.Where(func6);
             Console.WriteLine("Listede ki Ali isimli kişilerin soyisimleri;");
@@ -103,6 +103,12 @@ namespace ActionFuncPredicateDelegate_UsingWhereForEachMethod_
             {
                 Console.WriteLine(item.Ad);
             }
+
+            //First and FirstorDefault metotların kullanılması
+            //First => Gelen sonuç listesinden ilkini getirir ve listenin en az bir eleman içermesi beklenir aksi taktirde hataya dusecektir.
+            //FirstOrDefault ise => açıklamasından da anlaşılacağı üzere type? yani gelen sonuc listesinin dolu olması halinde ilk değeri verirken, bu sonuc listesinin bos deger de alabilecegini ve sonuc listesinin bu sekilde gelmesi halinde hataya düsmeden bos deger verecegini belirtir.
+            Console.WriteLine(kisi.Where(p => p.Ad == "Ali").ToList().First().Id);
+            Console.WriteLine(kisi.Where(p => p.Ad == "Aykut").ToList().FirstOrDefault());
 
             #endregion
 
