@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository(UsingDapp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionFuncPredicateDelegate(UsingWhereForEachMethod)", "ActionFuncPredicateDelegate(UsingWhereForEachMethod)\ActionFuncPredicateDelegate(UsingWhereForEachMethod).csproj", "{10942295-AAA6-4F44-A322-2D5B224778EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoleksiyonVeVeriYapıları(DictionarySortedListTupleStackQueu)", "KoleksiyonVeVeriYapıları(DictionarySortedListTupleStackQueu)\KoleksiyonVeVeriYapıları(DictionarySortedListTupleStackQueu).csproj", "{F148DEDD-1297-44BD-91E7-EA07B3034B32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)", "KoleksiyonVeVeriYapıları(DictionarySortedListTupleStackQueu)\KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu).csproj", "{F148DEDD-1297-44BD-91E7-EA07B3034B32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethod", "ExtensionMethod\ExtensionMethod.csproj", "{97A7F1DB-6999-4718-A3C7-AC634E2C6223}"
 EndProject
