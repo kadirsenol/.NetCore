@@ -37,9 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericRepository(UsingDapp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionFuncPredicateDelegate(UsingWhereForEachMethod)", "ActionFuncPredicateDelegate(UsingWhereForEachMethod)\ActionFuncPredicateDelegate(UsingWhereForEachMethod).csproj", "{10942295-AAA6-4F44-A322-2D5B224778EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)", "KoleksiyonVeVeriYapıları(DictionarySortedListTupleStackQueu)\KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu).csproj", "{F148DEDD-1297-44BD-91E7-EA07B3034B32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethod", "ExtensionMethod\ExtensionMethod.csproj", "{97A7F1DB-6999-4718-A3C7-AC634E2C6223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethod", "ExtensionMethod\ExtensionMethod.csproj", "{97A7F1DB-6999-4718-A3C7-AC634E2C6223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)", "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)\KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu).csproj", "{8AC55E12-908A-4792-B5D4-1A4D02D517DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,14 +115,14 @@ Global
 		{10942295-AAA6-4F44-A322-2D5B224778EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10942295-AAA6-4F44-A322-2D5B224778EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10942295-AAA6-4F44-A322-2D5B224778EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F148DEDD-1297-44BD-91E7-EA07B3034B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F148DEDD-1297-44BD-91E7-EA07B3034B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F148DEDD-1297-44BD-91E7-EA07B3034B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F148DEDD-1297-44BD-91E7-EA07B3034B32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{97A7F1DB-6999-4718-A3C7-AC634E2C6223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{97A7F1DB-6999-4718-A3C7-AC634E2C6223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97A7F1DB-6999-4718-A3C7-AC634E2C6223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97A7F1DB-6999-4718-A3C7-AC634E2C6223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
