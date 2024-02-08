@@ -41,6 +41,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethod", "Extensio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)", "KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu)\KoleksiyonlarVeVeriYapıları(DictionarySortedListTupleStackQueu).csproj", "{8AC55E12-908A-4792-B5D4-1A4D02D517DE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "soliD(Logger)", "soliD(Logger)\soliD(Logger).csproj", "{45E536A7-473E-4381-894D-9C537F7868DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AC55E12-908A-4792-B5D4-1A4D02D517DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E536A7-473E-4381-894D-9C537F7868DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E536A7-473E-4381-894D-9C537F7868DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E536A7-473E-4381-894D-9C537F7868DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E536A7-473E-4381-894D-9C537F7868DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
