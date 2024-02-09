@@ -10,16 +10,16 @@ namespace soliD_DependencyInversionPrincible_.Concrete
     public class Loglayici : ILoglayici
     {
 
-        #region Constructor Injection
-        //LLoglayıcı sınıfına, bağımlı olduğu loglanabilir yeteneğine sahip nesnelerin ILoglanabilir yeteneği üzerinden constructor ile enjekte edilmesi.
+        #region Constructor Injection Pattern
+        //LLoglayıcı sınıfına, bağımlı olduğu loglanabilir yeteneğine sahip nesnelerin ILoglanabilir yeteneği üzerinden constructor ile dependency injection edilmesi.
         public Loglayici(ILoglanabilir loglanabilir, string msg)
         {
             loglanabilir.Loglan(msg);
         }
         #endregion
 
-        #region Method Injection(II. Yol)
-        //Loglayıcı sınıfına, bağımlı olduğu loglanabilir yeteneğine sahip nesnelerin ILoglanabilir yeteneği üzerinden metot ile enjekte edilmesi.
+        #region Method Injection Pattern (II. Yol)
+        //Loglayıcı sınıfına, bağımlı olduğu loglanabilir yeteneğine sahip nesnelerin ILoglanabilir yeteneği üzerinden metot ile dependency injection edilmesi.
 
 
         public void Logla(ILoglanabilir loglanabilir, string msg)
