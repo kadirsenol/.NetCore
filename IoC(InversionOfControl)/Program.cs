@@ -9,9 +9,11 @@ namespace IoC_InversionOfControl_
     {
         static void Main(string[] args)
         {
-            #region IoC of Unity
+            //Service ve container lar, "Dependency Inversion" islerini merkezileştiriyor.
 
-            //Servis ve conteynır işlerini merkezileştiriyor.
+            #region IoC of Unity
+            //Istenilen hizmetlerin tamamını kayıt sirasinda Constructor Injection lari dahil bizim belirlediğimiz bir konteynırdır.
+            //String etiket girerek aynı yetenekte birden fazla bagımlılık nesnesi girisi yapılabiliyor. (Tercih nedenidir.)
 
             IUnityContainer unitycontainer = new UnityContainer();
             unitycontainer.RegisterType<ICar, Audi>("Audi");
@@ -27,23 +29,25 @@ namespace IoC_InversionOfControl_
             #endregion
 
             #region IoC of Mic.Ex.DependencyInjection
-            //eklenen hizmetin Constructor injection ları otomatik olarak built in dependency injection
-            //yani enjekte edilecek bağımlılıkları otomatik inşa eder ve sağlar.
-            //String etiket girerek aynı yetenekte birden fazla bagımlılık nesnesi girisi yapılamıyor, yapılması denendiginde en son kayıtı hafızada tutar.
+            //Eklenen hizmet istenildiğinde, Constructor injection larını(enjekte edilecek bağımlılıkları) built in dependency injection ozelligi ile servis içerisine eklenen-
+            //hizmetlerden otomatik inşa eder ve sağlar, bu nedenle kayıt sirasinda Constructor Injection lar belirtilmez. (Tercih nedenidir.)
+            //String etiket girerek aynı yetenekte birden fazla bagımlılık nesnesi girisi yapılamıyor, yapılması denendiginde en son kayıtı hafızada tutar ve onu dondurur.
 
             ServiceCollection service = new ServiceCollection();
-            service.AddScoped<ICar, Audi>(); /* service.AddSingleton<Driver>(new Driver(new Audi())); bagimliliklarin elle manuel verilmesi, tercih edilmez !*/
-            service.AddTransient<Driver>();  /* service.AddSingleton<Audi>(new Audi()); bagimliliklarin elle manuel verilmesi, tercih edilmez !*/
+            service.AddScoped<ICar, Audi>(); /* service.AddSingleton<Audi>(new Audi()); bagimliliklarin manuel verilmesi, tercih edilmez !*/    
+            service.AddTransient<Driver>();  /* service.AddSingleton<Driver>(new Driver(new Audi())); bagimliliklarin manuel verilmesi, tercih edilmez !*/
             
+
             IServiceProvider serviceProvider = service.BuildServiceProvider();
             ICar audi = serviceProvider.GetService<ICar>();
             audi.Run();
-            Driver driver = serviceProvider.GetService<Driver>();
-            driver.RunCar();
+            Driver driver = serviceProvider.GetService<Driver>(); //Driver' in Constructor Injection larını, servise eklediğimiz <ICar,Audi> hizmetinden built in ederek sağlayacaktır.
+            driver.RunCar();                                      //Bu ozellige, Built in Dependency Injection denir. (Enjekte edilecek bağımlılıkları inşa etmek)
 
             #endregion
         }
 
+        #region Using for MainMethod
         public interface ICar
         {
             public void Run();
@@ -56,25 +60,26 @@ namespace IoC_InversionOfControl_
                 Console.WriteLine("Run of Audi");
             }
         }
-        public  class Bmw : ICar
+        public class Bmw : ICar
         {
             public void Run()
             {
                 Console.WriteLine("Run of Bmw");
             }
         }
-        
+
         public class Driver
         {
             private readonly ICar _car;
             public Driver(ICar car)
             {
-               _car = car;
+                _car = car;
             }
             public void RunCar()
             {
                 _car.Run();
             }
-        }
+        } 
+        #endregion
     }
 }
