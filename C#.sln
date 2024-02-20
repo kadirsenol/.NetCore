@@ -45,13 +45,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "soliD(Logger)", "soliD(Logg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC(InversionOfControl)", "IoC(InversionOfControl)\IoC(InversionOfControl).csproj", "{26097CA8-779A-491A-8855-DD00566A18E7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC Web Project & Entity Framework", "MVC Web Project & Entity Framework", "{169B70F9-37B2-4607-B140-F0BF9ADBA582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Framework for Cinema Example", "Entity Framework for Cinema Example\Entity Framework for Cinema Example.csproj", "{3BDF9C38-7571-4DE0-95EE-2C0986A18EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity Layer", "Entity Layer\Entity Layer.csproj", "{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSandSQLite", "CSandSQLite\CSandSQLite.csproj", "{D7DD6103-95D8-4519-B7CC-7B2BA805956B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data Access Layer", "Data Access Layer\Data Access Layer.csproj", "{59E7C34A-34F4-4702-82E2-9CE9C7FCB164}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC Web Project with Entity Framework", "MVC Web Project with Entity Framework", "{6176F93A-4B9F-49DC-A643-BD7001EC7674}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My Blog and IoT Automation", "My Blog and IoT Automation\My Blog and IoT Automation.csproj", "{3A000794-051F-42C0-A0DA-9031BC714A40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data Access Layer", "MVC Web Project with Entity Framework\Data Access Layer\Data Access Layer.csproj", "{E8EA1897-6161-466F-9B81-FD9A77D6B3AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Layer", "MVC Web Project with Entity Framework\Entity Layer\Entity Layer.csproj", "{295A5520-D38F-45BD-BC1D-704125D82925}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My Blog and IoT Automation", "MVC Web Project with Entity Framework\My Blog and IoT Automation\My Blog and IoT Automation.csproj", "{5F773237-631B-4851-AB9F-6C8A8DDA4E0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,26 +147,34 @@ Global
 		{26097CA8-779A-491A-8855-DD00566A18E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26097CA8-779A-491A-8855-DD00566A18E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26097CA8-779A-491A-8855-DD00566A18E7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59E7C34A-34F4-4702-82E2-9CE9C7FCB164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59E7C34A-34F4-4702-82E2-9CE9C7FCB164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59E7C34A-34F4-4702-82E2-9CE9C7FCB164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59E7C34A-34F4-4702-82E2-9CE9C7FCB164}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3A000794-051F-42C0-A0DA-9031BC714A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A000794-051F-42C0-A0DA-9031BC714A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A000794-051F-42C0-A0DA-9031BC714A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A000794-051F-42C0-A0DA-9031BC714A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDF9C38-7571-4DE0-95EE-2C0986A18EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDF9C38-7571-4DE0-95EE-2C0986A18EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDF9C38-7571-4DE0-95EE-2C0986A18EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDF9C38-7571-4DE0-95EE-2C0986A18EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8EA1897-6161-466F-9B81-FD9A77D6B3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EA1897-6161-466F-9B81-FD9A77D6B3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EA1897-6161-466F-9B81-FD9A77D6B3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EA1897-6161-466F-9B81-FD9A77D6B3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{295A5520-D38F-45BD-BC1D-704125D82925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{295A5520-D38F-45BD-BC1D-704125D82925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{295A5520-D38F-45BD-BC1D-704125D82925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{295A5520-D38F-45BD-BC1D-704125D82925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F773237-631B-4851-AB9F-6C8A8DDA4E0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F773237-631B-4851-AB9F-6C8A8DDA4E0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F773237-631B-4851-AB9F-6C8A8DDA4E0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F773237-631B-4851-AB9F-6C8A8DDA4E0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FA5C60EB-D6DC-4B4D-AC20-432C3206C6D9} = {169B70F9-37B2-4607-B140-F0BF9ADBA582}
-		{59E7C34A-34F4-4702-82E2-9CE9C7FCB164} = {169B70F9-37B2-4607-B140-F0BF9ADBA582}
-		{3A000794-051F-42C0-A0DA-9031BC714A40} = {169B70F9-37B2-4607-B140-F0BF9ADBA582}
+		{E8EA1897-6161-466F-9B81-FD9A77D6B3AA} = {6176F93A-4B9F-49DC-A643-BD7001EC7674}
+		{295A5520-D38F-45BD-BC1D-704125D82925} = {6176F93A-4B9F-49DC-A643-BD7001EC7674}
+		{5F773237-631B-4851-AB9F-6C8A8DDA4E0D} = {6176F93A-4B9F-49DC-A643-BD7001EC7674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EBAF1BE-F737-418F-BAFC-017E8C682FE4}
