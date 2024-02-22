@@ -1,3 +1,5 @@
+
+using BussinesLayer.Abstract;
 using Data_Access_Layer.Repositories.Abstract;
 using Entity_Layer.Entities.Concrete;
 using Microsoft.AspNetCore.Mvc;
@@ -8,14 +10,16 @@ namespace My_Blog_and_IoT_Automation.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
         /**************************************************************/
 
-        private readonly IRepository<AkilliKlima, int> _klimarepo;
-        public HomeController(IRepository<AkilliKlima, int> klimarepo)
+        private readonly IMusteriManager _musmanager;
+        private readonly IRepository<Urun, int> _urunrepo;
+        public HomeController(IRepository<Urun, int> urunrepo, IMusteriManager musmanager)
         {
-            _klimarepo = klimarepo;
+            _musmanager = musmanager;
+            _urunrepo = urunrepo;
         }
 
         /***************************************************************/
@@ -27,6 +31,7 @@ namespace My_Blog_and_IoT_Automation.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 

@@ -6,9 +6,11 @@ namespace Data_Access_Layer.DBContexts
 {
     public class SqlDbContext : DbContext
     {
-
-        public DbSet<AkilliKlima> AkilliKlimalar { get; set; }
-        public DbSet<AkilliPerde> AkilliPerdeler { get; set; }
+        public DbSet<Urun> Urunler { get; set; }
+        public DbSet<Siparis> Siparisler { get; set; }
+        public DbSet<Kategori> Kategoriler { get; set; }
+        public DbSet<Musteri> Musteriler { get; set; }
+        public DbSet<Konut> Konutlar { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -8,7 +8,7 @@ namespace Data_Access_Layer.Repositories.Concrete
     public class Repository<TDBContext, T, TId> : IRepository<T, TId> where T : BaseEntity<TId>
                                                                       where TDBContext : DbContext, new()
     {
-        readonly TDBContext dbContext;
+        private readonly TDBContext dbContext;
         public Repository()
         {
             dbContext = new TDBContext();

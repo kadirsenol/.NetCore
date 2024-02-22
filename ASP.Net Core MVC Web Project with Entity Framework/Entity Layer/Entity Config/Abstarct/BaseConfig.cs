@@ -8,8 +8,6 @@ namespace Entity_Layer.Entity_Config.Abstarct
     {
         public virtual void Configure(EntityTypeBuilder<T> builder)
         {
-            builder.Property(p => p.CreateDate).HasDefaultValueSql("GETDATE()");
-            builder.Property(p => p.UpdateDate).HasDefaultValueSql("GETDATE()");
             builder.Property(p => p.Code).HasMaxLength(50);
         }
     }

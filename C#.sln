@@ -57,6 +57,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Layer", "ASP.Net Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My Blog and IoT Automation", "ASP.Net Core MVC Web Project with Entity Framework\My Blog and IoT Automation\My Blog and IoT Automation.csproj", "{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinesLayer", "BussinesLayer\BussinesLayer.csproj", "{D4A9C7A1-C3C3-4944-8177-BB5A942EB982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -167,6 +169,10 @@ Global
 		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A9C7A1-C3C3-4944-8177-BB5A942EB982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A9C7A1-C3C3-4944-8177-BB5A942EB982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A9C7A1-C3C3-4944-8177-BB5A942EB982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A9C7A1-C3C3-4944-8177-BB5A942EB982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,6 +181,7 @@ Global
 		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
 		{60A73EED-45E4-4B57-BDBD-B2776636B083} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
 		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
+		{D4A9C7A1-C3C3-4944-8177-BB5A942EB982} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EBAF1BE-F737-418F-BAFC-017E8C682FE4}

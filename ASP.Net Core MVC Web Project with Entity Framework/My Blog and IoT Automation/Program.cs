@@ -1,3 +1,5 @@
+using BussinesLayer.Abstract;
+using BussinesLayer.Concrete;
 using Data_Access_Layer.DBContexts;
 using Data_Access_Layer.Repositories.Abstract;
 using Data_Access_Layer.Repositories.Concrete;
@@ -15,8 +17,13 @@ namespace My_Blog_and_IoT_Automation
             builder.Services.AddControllersWithViews();
 
 
+            builder.Services.AddScoped<IMusteriManager, MusteriManager>();
+            builder.Services.AddScoped<IRepository<Urun, int>, Repository<SqlDbContext, Urun, int>>();
+            builder.Services.AddScoped<IRepository<Kategori, int>, Repository<SqlDbContext, Kategori, int>>();
+            builder.Services.AddScoped<IRepository<Konut, int>, Repository<SqlDbContext, Konut, int>>();
+            builder.Services.AddScoped<IRepository<Siparis, int>, Repository<SqlDbContext, Siparis, int>>();
+            builder.Services.AddScoped<IRepository<SiparisDetay, int>, Repository<SqlDbContext, SiparisDetay, int>>();
 
-            builder.Services.AddScoped<IRepository<AkilliKlima, int>, Repository<SqlDbContext, AkilliKlima, int>>();
 
 
 
