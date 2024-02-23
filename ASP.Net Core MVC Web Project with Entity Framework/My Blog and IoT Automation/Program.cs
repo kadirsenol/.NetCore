@@ -18,6 +18,7 @@ namespace My_Blog_and_IoT_Automation
 
 
             builder.Services.AddScoped<IMusteriManager, MusteriManager>();
+            builder.Services.AddScoped<IRepository<Musteri, int>, Repository<SqlDbContext, Musteri, int>>();
             builder.Services.AddScoped<IRepository<Urun, int>, Repository<SqlDbContext, Urun, int>>();
             builder.Services.AddScoped<IRepository<Kategori, int>, Repository<SqlDbContext, Kategori, int>>();
             builder.Services.AddScoped<IRepository<Konut, int>, Repository<SqlDbContext, Konut, int>>();
