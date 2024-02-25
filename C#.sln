@@ -47,16 +47,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Framework for Cinema
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSandSQLite", "CSandSQLite\CSandSQLite.csproj", "{D7DD6103-95D8-4519-B7CC-7B2BA805956B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.Net Core MVC Web Project with Entity Framework", "ASP.Net Core MVC Web Project with Entity Framework", "{D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data Access Layer", "ASP.Net Core MVC Web Project with Entity Framework\Data Access Layer\Data Access Layer.csproj", "{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity Layer", "ASP.Net Core MVC Web Project with Entity Framework\Entity Layer\Entity Layer.csproj", "{60A73EED-45E4-4B57-BDBD-B2776636B083}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My Blog and IoT Automation", "ASP.Net Core MVC Web Project with Entity Framework\My Blog and IoT Automation\My Blog and IoT Automation.csproj", "{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinesLayer", "ASP.Net Core MVC Web Project with Entity Framework\BussinesLayer\BussinesLayer.csproj", "{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBFirst of Entity Framework", "DBFirst of Entity Framework\DBFirst of Entity Framework.csproj", "{B3480338-31DC-4055-BFA9-D5AD5B28E344}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeFirst of Entity Framework", "CodeFirst of Entity Framework\CodeFirst of Entity Framework.csproj", "{E1A86BF9-A374-47FB-B964-81E21A5908EA}"
@@ -65,11 +55,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID Principles", "SOLID P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInversion(LoggerExample)", "SOLID Principles\DependencyInversion(LoggerExample)\DependencyInversion(LoggerExample).csproj", "{E8C3F6BE-9A1D-47EB-98AC-5ACC3D1E9815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table Per Type(TPT) for Entity Framework", "Table Per Type(TPT) for Entity Framework\Table Per Type(TPT) for Entity Framework.csproj", "{EFEFE99F-280C-497D-A441-9E366C186504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Table Per Type(TPT) for Entity Framework", "Table Per Type(TPT) for Entity Framework\Table Per Type(TPT) for Entity Framework.csproj", "{EFEFE99F-280C-497D-A441-9E366C186504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table Per Hierarchy (TPH) for Entity Framework", "Table Per Hierarchy (TPH) for Entity Framework\Table Per Hierarchy (TPH) for Entity Framework.csproj", "{6870E82A-8AAE-419A-8775-BD5E2F95E714}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Table Per Hierarchy (TPH) for Entity Framework", "Table Per Hierarchy (TPH) for Entity Framework\Table Per Hierarchy (TPH) for Entity Framework.csproj", "{6870E82A-8AAE-419A-8775-BD5E2F95E714}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ Sorgulari", "LINQ Sorgulari\LINQ Sorgulari.csproj", "{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ Sorgulari", "LINQ Sorgulari\LINQ Sorgulari.csproj", "{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -165,22 +155,6 @@ Global
 		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7DD6103-95D8-4519-B7CC-7B2BA805956B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60A73EED-45E4-4B57-BDBD-B2776636B083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60A73EED-45E4-4B57-BDBD-B2776636B083}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60A73EED-45E4-4B57-BDBD-B2776636B083}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60A73EED-45E4-4B57-BDBD-B2776636B083}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B3480338-31DC-4055-BFA9-D5AD5B28E344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B3480338-31DC-4055-BFA9-D5AD5B28E344}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3480338-31DC-4055-BFA9-D5AD5B28E344}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -210,10 +184,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8BAF5D45-A09E-4F0C-86B5-F78E99B86D78} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
-		{60A73EED-45E4-4B57-BDBD-B2776636B083} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
-		{2ADA06B6-0AA0-4E2F-B8EB-B84B000A37BC} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
-		{4DCE5D51-31E8-431D-85FE-3B8A5BB4AD1A} = {D67C72D8-12A5-4706-9AEC-B7DDB6FD373B}
 		{E8C3F6BE-9A1D-47EB-98AC-5ACC3D1E9815} = {54160710-81A5-4DA6-BF34-C8DEF4DBD417}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
