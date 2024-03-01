@@ -61,6 +61,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Table Per Hierarchy (TPH) f
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ Sorgulari", "LINQ Sorgulari\LINQ Sorgulari.csproj", "{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NetCoreWebAppMVC", "ASP.NetCoreWebAppMVC\ASP.NetCoreWebAppMVC.csproj", "{37FC068D-CF05-4D1A-AC16-5F4E4D61BE96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,10 @@ Global
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37FC068D-CF05-4D1A-AC16-5F4E4D61BE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37FC068D-CF05-4D1A-AC16-5F4E4D61BE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37FC068D-CF05-4D1A-AC16-5F4E4D61BE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37FC068D-CF05-4D1A-AC16-5F4E4D61BE96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
