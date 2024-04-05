@@ -61,6 +61,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Table Per Hierarchy (TPH) f
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ Sorgulari", "LINQ Sorgulari\LINQ Sorgulari.csproj", "{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core MVC", "Asp.Net Core MVC\Asp.Net Core MVC.csproj", "{AC33619B-A900-4E76-8480-41260AD090F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core Web API", "Asp.Net Core Web API\Asp.Net Core Web API.csproj", "{23FE8123-481A-4C26-9E39-B3319966BBEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +183,14 @@ Global
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC8A561-6F06-42FA-A23A-1E23FE8B801B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC33619B-A900-4E76-8480-41260AD090F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC33619B-A900-4E76-8480-41260AD090F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC33619B-A900-4E76-8480-41260AD090F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC33619B-A900-4E76-8480-41260AD090F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

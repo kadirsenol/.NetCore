@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Urun>
+
+<div class="container" >
+
+    <div class="row" >
+        <div class="col-2" >
+            <a type="submit" class="btn btn-primary" asp-action="Create" > Ürün Oluştur </a> 
+        </div>
+    </div>
+
+</div>
+
+<table class="table" > 
+
+    <thead>
+        <tr>
+            <th> Urun Adi </th>
+            <th> Stok Adet </th>
+            <th> Kategori Adi </th>
+            <th> Urun Fiyati </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.UrunAdi</td>
+                <td>@item.StokAdet</td>
+                <td>@item.KategoriAdi</td>
+                <td>@item.UrunFiyati</td>
+                <td>
+                    <div class="row">
+                        <div class="col-2" >
+                            <form asp-action="Update" method="post">
+                                <input type="hidden" name="Id" id="Id" value="@item.Id" /> 
+                                <input type="submit" class="btn btn-secondary" value="Edit" />
+                            </form>
+                        </div>
+                        <div class="col-4">
+                            <form asp-action="Delete" method="post" >
+                                <input type="hidden" name="Id" id="Id" value="@item.Id" /> @*asp-for modele esitleyip model turunden gonderiyor fakat burada asp-foru IEnumdan dolayi kullanamadigimiz icin taghalperlersiz input tanimladik. Ve gonderecegimiz postu inputun valuesini manuel yazdik ve bu sekilde veri tipinde gidiyor model tipinde degil cunku taghalper kullanmadik, zaten dolu geliyor. Asp for valueye degeri otomatik yaziyor(Eger inputtan kullanici dolduruyorsa veya model zaten dolu geliyorsa iki turden de otomatik dolduruyor).*@
+                                <input type="submit" class="btn btn-danger" value="Delete" />          
+                            </form>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
+@section Scripts {
+    @await Component.InvokeAsync("Notyf") @*Notyf icin js eklentisi*@
+}
