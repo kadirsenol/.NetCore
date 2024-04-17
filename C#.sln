@@ -65,6 +65,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core MVC", "Asp.Net
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Net Core Web API", "Asp.Net Core Web API\Asp.Net Core Web API.csproj", "{23FE8123-481A-4C26-9E39-B3319966BBEA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server for My React Projects", "Server for My React Projects", "{E61D8D83-D5A1-486E-844C-29E8F540731F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyReactProjects.BussinesLayer", "Server for My React Projects\MyReactProjects.BussinesLayer\MyReactProjects.BussinesLayer.csproj", "{D1C884E3-DFF1-485A-9F37-42AB56CF2EED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyReactProjects.DataAccessLayer", "Server for My React Projects\MyReactProjects.DataAccessLayer\MyReactProjects.DataAccessLayer.csproj", "{9A18C904-551A-4E68-8049-08DA995CB211}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyReactProjects.EntityLayer", "Server for My React Projects\MyReactProjects.EntityLayer\MyReactProjects.EntityLayer.csproj", "{78A1C762-1FFE-4C2A-91DF-274E95E8642D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyReactProjects.WebApiLayer", "Server for My React Projects\MyReactProjects.WebApiLayer\MyReactProjects.WebApiLayer.csproj", "{5DB940EB-4FFD-449C-834C-4C45AF90F8B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -191,12 +201,32 @@ Global
 		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23FE8123-481A-4C26-9E39-B3319966BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C884E3-DFF1-485A-9F37-42AB56CF2EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C884E3-DFF1-485A-9F37-42AB56CF2EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C884E3-DFF1-485A-9F37-42AB56CF2EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C884E3-DFF1-485A-9F37-42AB56CF2EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A18C904-551A-4E68-8049-08DA995CB211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A18C904-551A-4E68-8049-08DA995CB211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A18C904-551A-4E68-8049-08DA995CB211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A18C904-551A-4E68-8049-08DA995CB211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A1C762-1FFE-4C2A-91DF-274E95E8642D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A1C762-1FFE-4C2A-91DF-274E95E8642D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A1C762-1FFE-4C2A-91DF-274E95E8642D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A1C762-1FFE-4C2A-91DF-274E95E8642D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB940EB-4FFD-449C-834C-4C45AF90F8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB940EB-4FFD-449C-834C-4C45AF90F8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB940EB-4FFD-449C-834C-4C45AF90F8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB940EB-4FFD-449C-834C-4C45AF90F8B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E8C3F6BE-9A1D-47EB-98AC-5ACC3D1E9815} = {54160710-81A5-4DA6-BF34-C8DEF4DBD417}
+		{D1C884E3-DFF1-485A-9F37-42AB56CF2EED} = {E61D8D83-D5A1-486E-844C-29E8F540731F}
+		{9A18C904-551A-4E68-8049-08DA995CB211} = {E61D8D83-D5A1-486E-844C-29E8F540731F}
+		{78A1C762-1FFE-4C2A-91DF-274E95E8642D} = {E61D8D83-D5A1-486E-844C-29E8F540731F}
+		{5DB940EB-4FFD-449C-834C-4C45AF90F8B4} = {E61D8D83-D5A1-486E-844C-29E8F540731F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EBAF1BE-F737-418F-BAFC-017E8C682FE4}
