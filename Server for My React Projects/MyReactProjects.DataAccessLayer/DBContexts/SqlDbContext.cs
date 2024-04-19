@@ -13,7 +13,7 @@ namespace MeetingOrganizer.DataAccessLayer.DBContexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.Load("MeetingOrganizer.EntityLayer"));
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.Load("MyReactProjects.EntityLayer"));
             base.OnModelCreating(modelBuilder);
         }
 

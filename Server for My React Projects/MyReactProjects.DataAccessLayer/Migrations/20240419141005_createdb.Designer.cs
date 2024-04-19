@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MyReactProjects.DataAccessLayer.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    [Migration("20240417120538_createdb")]
+    [Migration("20240419141005_createdb")]
     partial class createdb
     {
         /// <inheritdoc />
@@ -64,7 +64,7 @@ namespace MyReactProjects.DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Product");
+                    b.ToTable("Urunler");
                 });
 
             modelBuilder.Entity("MeetingOrganizer.EntityLayer.Concrete.ToplantiKayit", b =>
@@ -114,7 +114,7 @@ namespace MyReactProjects.DataAccessLayer.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ToplantiKayit");
+                    b.ToTable("ToplantiKayitlar");
                 });
 
             modelBuilder.Entity("MeetingOrganizer.EntityLayer.Concrete.User", b =>
@@ -178,7 +178,7 @@ namespace MyReactProjects.DataAccessLayer.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("User");
+                    b.ToTable("Kullanıcılar");
                 });
 #pragma warning restore 612, 618
         }

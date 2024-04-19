@@ -36,7 +36,7 @@ namespace MeetingOrganizer.WebApiLayer.Controllers
                         TokenManager tokenManager = new TokenManager();
                         User userwithToken = await tokenManager.CreateToken(user1, configuration);
                         await userManager.update(userwithToken);
-                        return Ok(userwithToken.AccessToken);
+                        return Ok(new { accessToken = userwithToken.AccessToken, message = $"Hoşgeldin {userwithToken.Ad} !" });
                     }
 
                 }
@@ -65,7 +65,7 @@ namespace MeetingOrganizer.WebApiLayer.Controllers
                     {
                         user.Rol = "Üye";
                         await userManager.Insert(user);
-                        return Ok();
+                        return Ok("Kullanıcı başarıyla kaydedildi.");
                     }
                 }
                 catch (Exception ex)
