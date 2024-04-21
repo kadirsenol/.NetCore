@@ -52,31 +52,30 @@ namespace MeetingOrganizer.WebApiLayer.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Register(UserRegisterVm userRegisterVm) // IActionResult olarak dönüp return kisminda Ok(userWithToken.AccessToke) olarak donebilirsin. Else kısmına da Problem("Kullanici adi sifre hatali")
+        public async Task<IActionResult> Register(UserRegisterVm userRegisterVm = null) // IActionResult olarak dönüp return kisminda Ok(userWithToken.AccessToke) olarak donebilirsin. Else kısmına da Problem("Kullanici adi sifre hatali")
         {
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) // Eger browserde js kapatilmissa buraya takilip yine validleri gonderecek.
             {
-                try
-                {
-                    User user = mapper.Map<User>(userRegisterVm);
-                    bool result = await userManager.ChackUserRegister(user);
-                    if (result)
-                    {
-                        user.Rol = "Üye";
-                        await userManager.Insert(user);
-                        return Ok("Kullanıcı başarıyla kaydedildi.");
-                    }
-                }
-                catch (Exception ex)
-                {
-
-                    return Problem(ex.Message);
-                }
-
+                var errorMessage = ModelState.Values.SelectMany(p => p.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(errorMessage);
             }
-            var errorMessage = ModelState.Values.SelectMany(p => p.Errors.Select(e => e.ErrorMessage));
-            return BadRequest(errorMessage);
+            try
+            {
+                User user = mapper.Map<User>(userRegisterVm);
+                bool result = await userManager.ChackUserRegister(user);
+                if (result)
+                {
+                    user.Rol = "Üye";
+                    await userManager.Insert(user);
+                    return Ok("Kullanıcı başarıyla kaydedildi.");
+                }
+                return Problem("Opss! Beklenedik bir hata meydana geldi.");
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
         }
 
     }

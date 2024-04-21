@@ -18,7 +18,6 @@ namespace MeetingOrganizer.WebApiLayer
             builder.Services.AddAutoMapper(typeof(AutoMapperConfig));
 
 
-
             builder.Services.AddControllers();
 
 
