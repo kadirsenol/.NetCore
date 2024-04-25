@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MeetingOrganizer.WebApiLayer.Models.VMs.UserVM
+namespace MeetingOrganizer.EntityLayer.Concrete.VMs.UserVM
 {
     public class UserLoginVm
     {

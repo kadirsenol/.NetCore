@@ -1,4 +1,4 @@
-﻿namespace MeetingOrganizer.WebApiLayer.Models.VMs.ToplantiKayitVm
+﻿namespace MeetingOrganizer.EntityLayer.Concrete.VMs.ToplantiKayitVm
 {
     public class ToplantiUpdateVm
     {

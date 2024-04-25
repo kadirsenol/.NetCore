@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using MeetingOrganizer.EntityLayer.Concrete;
-using MeetingOrganizer.WebApiLayer.Models.VMs.ToplantiKayitVm;
-using MeetingOrganizer.WebApiLayer.Models.VMs.UserVM;
+using MeetingOrganizer.EntityLayer.Concrete.VMs.ToplantiKayitVm;
+using MeetingOrganizer.EntityLayer.Concrete.VMs.UserVM;
+
 
 namespace MeetingOrganizer.WebApiLayer.MyExtensions.AutoMapper
 {

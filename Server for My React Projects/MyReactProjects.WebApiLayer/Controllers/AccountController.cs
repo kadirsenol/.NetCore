@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MeetingOrganizer.BussinesLayer.Abstract;
 using MeetingOrganizer.EntityLayer.Concrete;
-using MeetingOrganizer.WebApiLayer.Models.VMs.UserVM;
+using MeetingOrganizer.EntityLayer.Concrete.VMs.UserVM;
 using MeetingOrganizer.WebApiLayer.MyExtensions.Tokens;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,31 +25,31 @@ namespace MeetingOrganizer.WebApiLayer.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Login(UserLoginVm userLoginVm) // IActionResult olarak dönüp return kisminda Ok(userWithToken.AccessToke) olarak donebilirsin. Else kısmına da Problem("Kullanici adi sifre hatali")
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                try
-                {
-                    User user = mapper.Map<User>(userLoginVm);
-                    User user1 = await userManager.ChackUserLogin(user);
-                    if (user1 != null)
-                    {
-                        TokenManager tokenManager = new TokenManager();
-                        User userwithToken = await tokenManager.CreateToken(user1, configuration);
-                        await userManager.update(userwithToken);
-                        return Ok(new { accessToken = userwithToken.AccessToken, message = $"Hoşgeldin {userwithToken.Ad} !" });
-                    }
-
-                }
-                catch (Exception ex)
-                {
-
-                    return Problem(ex.Message);
-                }
-
+                var errorMessage = ModelState.Values.SelectMany(p => p.Errors.Select(e => e.ErrorMessage));
+                return BadRequest(errorMessage);
             }
-            var errorMessage = ModelState.Values.SelectMany(p => p.Errors.Select(e => e.ErrorMessage));
-            return BadRequest(errorMessage);
+            try
+            {
+                User user = mapper.Map<User>(userLoginVm);
+                User user1 = await userManager.ChackUserLogin(user);
+                if (user1 != null)
+                {
+                    TokenManager tokenManager = new TokenManager();
+                    User userwithToken = await tokenManager.CreateToken(user1, configuration);
+                    await userManager.update(userwithToken);
+                    return Ok(new { accessToken = userwithToken.AccessToken, message = $"Hoşgeldin {(userwithToken.Ad).ToUpper()} !" });
+                }
+                return Problem("Opss! Giriş sırasında beklenedik bir hata meydana geldi.");
+            }
+            catch (Exception ex)
+            {
+                return Problem(ex.Message);
+            }
+
         }
+
 
         [HttpPost("[action]")]
         public async Task<IActionResult> Register(UserRegisterVm userRegisterVm = null) // IActionResult olarak dönüp return kisminda Ok(userWithToken.AccessToke) olarak donebilirsin. Else kısmına da Problem("Kullanici adi sifre hatali")
@@ -64,13 +64,15 @@ namespace MeetingOrganizer.WebApiLayer.Controllers
             {
                 User user = mapper.Map<User>(userRegisterVm);
                 bool result = await userManager.ChackUserRegister(user);
-                if (result)
+                bool result1 = await userManager.ChackConfirmPassword(userRegisterVm);
+                bool result2 = await userManager.ChackTcNo(userRegisterVm);
+                if (result && result1 && result2)
                 {
                     user.Rol = "Üye";
                     await userManager.Insert(user);
                     return Ok("Kullanıcı başarıyla kaydedildi.");
                 }
-                return Problem("Opss! Beklenedik bir hata meydana geldi.");
+                return Problem("Opss! Kayıt sırasında beklenedik bir hata meydana geldi.");
             }
             catch (Exception ex)
             {

@@ -1,4 +1,6 @@
 ﻿using MeetingOrganizer.EntityLayer.Concrete;
+using MeetingOrganizer.EntityLayer.Concrete.VMs.UserVM;
+
 
 namespace MeetingOrganizer.BussinesLayer.Abstract
 {
@@ -8,6 +10,9 @@ namespace MeetingOrganizer.BussinesLayer.Abstract
         public Task<User> ChackUserLogin(User entity);
         public Task<bool> ChackUserRegister(User entity);
 
+        public Task<bool> ChackConfirmPassword(UserRegisterVm userRegisterVm);
+
+        public Task<bool> ChackTcNo(UserRegisterVm userRegisterVm);
 
     }
 }

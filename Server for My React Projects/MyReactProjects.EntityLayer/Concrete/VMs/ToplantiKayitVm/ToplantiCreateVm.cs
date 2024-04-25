@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MeetingOrganizer.WebApiLayer.Models.VMs.ToplantiKayitVm
+namespace MeetingOrganizer.EntityLayer.Concrete.VMs.ToplantiKayitVm
 {
     public class ToplantiCreateVm
     {

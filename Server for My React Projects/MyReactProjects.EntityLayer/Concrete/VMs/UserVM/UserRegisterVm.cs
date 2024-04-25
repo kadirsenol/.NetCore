@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MeetingOrganizer.WebApiLayer.Models.VMs.UserVM
+namespace MeetingOrganizer.EntityLayer.Concrete.VMs.UserVM
 {
     public class UserRegisterVm
     {
@@ -16,5 +16,8 @@ namespace MeetingOrganizer.WebApiLayer.Models.VMs.UserVM
 
         [Required(ErrorMessage = "Parola Alanı Boş Geçilemez")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Parola Doğrulama Alanı Boş Geçilemez")]
+        public string ConfirmPassword { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using MeetingOrganizer.BussinesLayer.Abstract;
 using MeetingOrganizer.EntityLayer.Concrete;
-using MeetingOrganizer.WebApiLayer.Models.VMs.ToplantiKayitVm;
+using MeetingOrganizer.EntityLayer.Concrete.VMs.ToplantiKayitVm;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

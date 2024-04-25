@@ -12,6 +12,7 @@ namespace MeetingOrganizer.WebApiLayer.MyExtensions.Services
         {
             services.AddScoped<IUserManager, UserManager>();
             services.AddScoped<IToplantiKayitManager, ToplantiKayitManager>();
+            services.AddScoped<IProductManager, ProductManager>();
 
             return services;
 
