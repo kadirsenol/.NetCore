@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MyReactProjects.DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class createdb : Migration
+    public partial class dbcreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,9 +19,11 @@ namespace MyReactProjects.DataAccessLayer.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Ad = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    TcNo = table.Column<int>(type: "int", maxLength: 11, nullable: false),
+                    TcNo = table.Column<string>(type: "nvarchar(11)", maxLength: 11, nullable: false),
                     Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Rol = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    isConfirmEmail = table.Column<bool>(type: "bit", nullable: false),
+                    ConfirmEmailGuid = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ExprationToken = table.Column<DateTime>(type: "datetime2", nullable: true),

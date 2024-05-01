@@ -62,5 +62,57 @@ namespace MeetingOrganizer.BussinesLayer.Concrete
 
             return true;
         }
+
+        public async Task<User> GetByEmailUser(string email)
+        {
+            User user = await FirstOrDefault(p => p.Email == email);
+            if (user == null)
+            {
+                throw new Exception("Kayıt işlemi sırasında beklenmedik bir hata meydana geldi, lütfen tekrar kayıt olunuz.");
+            }
+            return user;
+        }
+
+
+        public async Task<bool> ConfirmEmailAsync(string uid, string code)
+        {
+            User user = await GetByPK(int.Parse(uid));
+
+            if (user == null || user.ConfirmEmailGuid != code)
+            {
+                throw new Exception("Email confirm sırasında bir hata meydana geldi, lütfen tekrar deneyin");
+            }
+
+            user.isConfirmEmail = true;
+            await update(user);
+
+            return true;
+        }
+
+        public async Task<string> CreateEmailConfirmGuidCode(User user)
+        {
+            Guid guid = Guid.NewGuid();
+            string code = guid.ToString();
+            user.ConfirmEmailGuid = code;
+            await update(user);
+            return code;
+        }
+
+        public async Task<bool> ChackUserEmailConfirm(User user)
+        {
+            User myuser = await GetByPK(user.Id);
+            if (myuser.isConfirmEmail)
+            {
+                return true;
+            }
+            else
+            {
+                throw new Exception("Lütfen email adresinizi, mail adresinize gönderdiğim linkten onaylayınız.");
+            }
+
+        }
+
+
+
     }
 }

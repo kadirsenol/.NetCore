@@ -13,6 +13,14 @@ namespace MeetingOrganizer.BussinesLayer.Abstract
         public Task<bool> ChackConfirmPassword(UserRegisterVm userRegisterVm);
 
         public Task<bool> ChackTcNo(UserRegisterVm userRegisterVm);
+        public Task<bool> ConfirmEmailAsync(string uid, string code);
+
+        public Task<User> GetByEmailUser(string email);
+
+        public Task<string> CreateEmailConfirmGuidCode(User id);
+
+        public Task<bool> ChackUserEmailConfirm(User user);
+
 
     }
 }

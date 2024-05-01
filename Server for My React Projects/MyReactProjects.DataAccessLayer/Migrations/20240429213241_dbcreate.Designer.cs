@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MyReactProjects.DataAccessLayer.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    [Migration("20240419141005_createdb")]
-    partial class createdb
+    [Migration("20240429213241_dbcreate")]
+    partial class dbcreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -133,6 +133,9 @@ namespace MyReactProjects.DataAccessLayer.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("ConfirmEmailGuid")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
@@ -164,14 +167,18 @@ namespace MyReactProjects.DataAccessLayer.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<int>("TcNo")
+                    b.Property<string>("TcNo")
+                        .IsRequired()
                         .HasMaxLength(11)
-                        .HasColumnType("int");
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<DateTime>("UpdateDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("GetDate()");
+
+                    b.Property<bool>("isConfirmEmail")
+                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
